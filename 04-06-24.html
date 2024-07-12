@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // /// Program to print the highest occurrence of the duplicate number 
+        //  inuput : [17,77,4,17,3,3,4,4,100,4]
+        // output:4
+
+        arr=[1,2,3,4,2,5,6,3,7,3,8,0]
+        empty=[]
+        uni=""
+        dup=""
+        maxdup=0
+        minuni=0
+
+        for(i=0;i<arr.length;i++){
+            if(!empty.includes(i)){
+                empty.push(arr[i])
+            }
+        }
+        console.log(empty);
+        for(i of empty){
+            c=0
+            for(j of arr){
+                if(i==j){
+                    c++
+                }
+            }
+            if(c>1){
+                if(maxdup<i){
+                    maxdup+=i
+                }
+
+            }
+            if(c==1){
+                if(minuni==0)
+                minuni+=i
+                if(i<minuni)
+                minuni+=i
+            }
+        }
+        console.log(minuni);
+        // ////write a program to print a unique number given range
+        arr1=[1,2,3,4,2,3,3,4,6,7]
+        for(k=0;k<arr1.length;k++){
+            c=0
+            for(l=0;l<arr1.length;l++){
+                if(arr1[k]==arr1[l]){
+                    c++
+                }
+            }
+            if(c==1){
+                console.log(arr1[k]);
+            }
+        }
+        // //write a program to print the 
+        arr=[17,77,4,17,3,3,4,4,100,4]
+        empty=[]
+        uni=""
+        dupcount=0
+        dup=0
+      
+        for(i=0;i<arr.length;i++){
+            if(!empty.includes(i)){
+                empty.push(arr[i])
+            }
+        }
+        console.log(empty);
+        for(i of empty){
+            c=0
+            for(j of arr){
+                if(i==j){
+                    c++
+                }
+            }
+            if(c>1){
+                if(c>dupcount){
+                    dup=i
+                    dupcount=c
+                 }
+
+            }
+            
+        }
+        console.log(dup);
+        // //  write a program to print the  second maximum duplicate number
+    
+
+        arr=[17,77,4,17,3,3,4,4,100,4,3]
+        empty=[]
+        uni=""
+        dupcount=0
+        dup=0
+      
+        for(i=0;i<arr.length;i++){
+            if(!empty.includes(i)){
+                empty.push(arr[i])
+            }
+        }
+        console.log(empty);
+        for(i of empty){
+            c=0
+            for(j of arr){
+                if(i==j){
+                    c++
+                }
+            }
+            if(c>1){
+            dup=i
+            
+            }
+        }
+        
+        console.log(dup);
+        //// Write  a program to print the  least repeated duplicate number given range
+
+        arr=[17,77,4,17,3,3,4,4,100,4,3]
+        empty=[]
+        dup=0
+        leastcount=0
+        for(i=0;i<arr.length;i++){
+            if(!empty.includes(i)){
+                empty.push(arr[i])
+            }
+        }
+        console.log(empty);
+        for(i of empty){
+            c=0
+            for(j of arr){
+                if(i==j){
+                    c++
+                }
+            }
+            if(c>1){
+                if(leastcount==0){
+                    leastcount=c
+                    dup=i
+                }
+                if(c<leastcount){
+                leastcount=c
+                dup=i
+             }
+            }
+        }
+        console.log(dup);
+       
+        
+       
+       
+    </script>
+    
+</body>
+</html>

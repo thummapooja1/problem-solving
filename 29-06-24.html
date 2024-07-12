@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to  print the pattern based on input
+        rows=+prompt("enter a no fo rows: ")
+       for(i=1;i<=rows;i++){
+           s=" "
+           for(j=1;j<=i;j++){
+              if(j%2==0){
+                s+=String.fromCharCode(96+j).toUpperCase()
+               }
+             else{
+                s+=String.fromCharCode(96+j)
+                }
+        
+            }
+          console.log(s)
+        }
+
+        // write a program to print the alphabets based on the input
+        row=+prompt("enter a no of rows:")
+char=65
+for(i=1;i<=row;i++){
+    m=""
+    for(j=1;j<=i;j++){
+           r=String.fromCharCode(char)
+        if(i%2===0&&j%2!==0){
+            r=r.toLowerCase()
+            
+        }
+         else if(i%2!==0&&j%2==0){
+            r=r.toLowerCase()
+        }
+        m+=r+" "
+        char++
+    }
+    console.log(m.trim())
+    
+    }
+    </script>
+    
+</body>
+</html>

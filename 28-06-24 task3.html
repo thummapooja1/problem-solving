@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to print the pattern start with Alphabets lower to upper in columns
+        rows=+prompt("enter a no fo rows:")
+        
+        for(i=1;i<=rows;i++){
+            s="",lower=97,upper=65
+            for(j=1;j<=i;j++){
+                if(i%2==1){
+                    s+=String.fromCharCode(lower)
+                    lower++
+                }
+                else{
+                    s+=String.fromCharCode(upper)
+                    upper++
+                }
+            }
+            console.log(s)
+        }
+        // write a program to the print the pattern combination of alphabets and number in rows...
+        rows=+prompt("enter a no of rows:")
+        for(i=1;i<=rows;i++){
+            s=""
+            upper=65,num=1,n=""
+            for(j=1;j<=i;j++){
+                s+=String.fromCharCode(upper)
+                upper++
+                n+=num
+                num++
+
+            }
+            console.log(s+n)
+        }
+        
+        // write a program to the print the pattern combination of alphabets and number in rows...
+        rows=+prompt("enter a no of rows:")
+        for(i=1;i<=rows;i++){
+            s=""
+            lower=97,num=1,n=""
+            for(j=1;j<=i;j++){
+                s+=String.fromCharCode(lower)
+                lower++
+                n+=num
+                num++
+
+            }
+            console.log(s+n)
+        }
+        // 
+        rows=prompt("enter a no fo rows:")
+        Num=0
+        for(i=1;i<=rows;i++){
+            s=""
+            for(j=1;j<=i;j++){
+                s+=Num
+               
+            }
+            Num++
+            console.log(s)
+        }
+        // 
+        row=+prompt("enter a no of rows:")
+        for(i=1;i<=row;i++){
+            s=""
+            for(j=1;j<=i;j++){
+                s+=i+" "
+            }
+            console.log(s)
+        }
+        // 
+        rows=+prompt("enter a no of rows:")
+        for(i=1;i<=rows;i++){
+            s=""
+            for(j=1;j<=rows-i+1;j++){
+                s=s+"*"+" "
+            }
+            console.log(s)
+        }
+        // 
+        row=+prompt("enter a no of rows:")
+        for(i=1;i<=row;i++){
+            s=""
+            for(j=1;j<=i;j++){
+                s+="*  "
+            }
+            console.log(s)
+        }
+        // 
+        rows1=+prompt("enter a no of rows:")
+        for(i=1;i<=rows1;i++){
+            s=""
+            for(k=1;k<=rows1-i;k++){
+                s+=" "
+            }
+            for(j=1;j<=i;j++){
+                s+="* "
+
+            }
+            console.log(s)
+        }
+        for(i=1;i<=rows1;i++){
+            s=""
+            for(k=1;k<i;k++){
+                s+=" "
+            }
+            for(j=1;j<=rows1-i;j++){
+                s+="* "
+            }
+            console.log(s)
+        }
+        // 
+        rows=+prompt("enter a no of rows:")
+        for(i=1;i<=rows*2-1;i++){
+            a=""
+            cols=(i<=rows)?i:2*rows-i
+            space=(i<=rows)?rows-i:i-rows
+            for(k=1;k<=space;k++){
+                a+=" "
+            }
+            for(j=1;j<=cols;j++){
+                a+="* "
+            }
+            console.log(a)
+        }
+        // 
+        rows=+prompt("enter a no of rows:")
+        for(i=1;i<=rows;i++){
+            prime=2
+            m=""
+            for(b=1;b<=rows;b++){
+                primecount=0
+                while(true){
+                    c=0
+                    for(i=2;i<prime;i++){
+                        if(prime%i==0){
+                            c++
+                            break
+                        }
+                    }
+                    if(c==0){
+                        primecount++
+                        m+=prime+" "
+                        if(primecount==b){
+                            console.log(s)
+                            prime++
+                            break
+                        }
+
+                    }
+                    prime++
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

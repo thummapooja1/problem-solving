@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to print the pattern given alphabets
+        row3=+prompt("enter no of rows:")
+         for(k=1;k<=row3;k++){
+            let string=""
+            for(l=0;l<k;l++){
+                string+=String.fromCharCode(l+65);
+            }
+            console.log(string)
+        }
+        // write a program to print the pattern given alphabets....
+        row4=+prompt("enter no of rows:")
+         for(k=1;k<=row4;k++){
+            let string=""
+            for(l=0;l<k;l++){
+                string+=String.fromCharCode(k-1+65);
+            }
+            console.log(string)
+        }
+        // 
+        row=prompt("enter a no of rows:")
+        for(i=1;i<=row;i++){
+          s=""
+          for(j=0;j<i;j++){
+            s=s+j
+             row++
+         }
+            // console.log(s)
+
+        }
+
+        function generatePattern(rows) {
+            let num = 1;
+            for (let i = 1; i <= rows; i++) {
+                let rowOutput = '';
+                for (let j = 1; j <= i; j++) {
+                    rowOutput += num + ' ';
+                     num++;
+                }
+             console.log(rowOutput.trim());
+            } 
+        }
+
+        // Number of rows
+        let rows = 4;
+        generatePattern(rows);
+        // another way to print the removing vowels in given string 
+        str=prompt("enter a string: ").split("").reverse()
+        emp=""
+
+        for(i of str){
+            if(i!="a"&&i!="e"&&i!="i"&&i!="o"&&i!="u"&&i!="A"&&i!="E"&&i!=="I"&&i!="O"&&i!="U"){
+            emp+=i
+            }
+        }
+        console.log(emp)
+        // 
+        rows=prompt("enter a no of rows:")
+        for(i=1;i<=rows;i++){
+            s=""
+            for(j=1;j<=i;j++){
+                if(i%2==1){
+                    if(j%2==1)
+                    s=s+1+" "
+                    else
+                    s+=0+" "
+            
+                }
+                else{
+                    if(j%2==1)
+                    s+=0+" "
+                    else
+                    s+=1+" "
+                }
+            }
+            console.log(s)
+        }
+    </script>
+    
+</body>
+</html>

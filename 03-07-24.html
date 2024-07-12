@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to print the time with perferect time
+        timearr=[{Time1:"10:34"},{Time2:"12:00"},{Time3:"02:30"},{Time4:"12:45"}]
+for(i of timearr){
+    for(j in i){
+        x=i[j].split(":")
+        if(x[1]=="00")
+        console.log(j)
+        if(x[1]!="00")
+        console.log(j,":",60-x[1]+"min")
+        
+    }
+}
+    </script>
+    
+</body>
+</html>

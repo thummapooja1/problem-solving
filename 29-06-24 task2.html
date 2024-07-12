@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to print the pattern enter your name   
+
+        name=prompt("enter a string :")
+        row=1,ind=0
+        while(name[ind]!=undefined){
+            s=""
+            for(i=1;i<=row&&name[ind]!=undefined;i++){
+                s=s+name[ind]+" "
+                ind++
+            }
+            console.log(s)
+            row++
+        }
+        // write a program to print the prime number to pattern 
+        row=+prompt("enter no of rows:")
+        prime=2
+        for(a=1;a<=row;a++){
+            primeCount=0,n=""
+            while(true){
+                c=0
+                for(i=2;i<prime;i++){
+                    if(prime%i==0){
+                        c++
+                        break
+                    }
+                }
+                if(c==0){
+                    primeCount++
+                    s=s+prime+" "
+                    if(primeCount==a){
+                        console.log(s)
+                        prime++
+                        break
+                    }
+                }
+                prime++
+            }
+        }
+        // write a program to print the 
+        rows=+prompt("entre a rows:")
+        for(i=1;i<=rows;i++){
+            s="",sum=0
+            for(j=1;j<=i;j++){
+               
+                if(j==1)
+              sum+=i
+            else{
+                sum+=rows-j+1
+               
+            }
+             s+=sum+" "
+            }
+            console.log(s)
+        }
+    </script>
+    
+</body>
+</html>

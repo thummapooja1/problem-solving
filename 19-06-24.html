@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String_topic</title>
+</head>
+<body>
+    <script>
+        // 1) input: Enter a string: Good Bye
+// output:
+// B - 1
+// G - 1
+// d - 1
+// e - 1
+// o - 2
+// y - 1
+
+        str=prompt("enter a string :").replaceAll(" ","")
+emp=[],
+lower1=str.split("").sort()
+for (i of lower1){
+    if(!emp.includes(i)){
+        emp.push(i)
+    }
+}
+console.log(emp)
+for(i of emp){
+    c=0
+    for(j of lower1){
+        if(i==j){
+            c++
+        }
+    }
+    console.log(i,c)
+}
+// ////2) input: Enter a string: Good Bye
+// output:
+
+// d - 1
+// e - 1
+// o - 2
+// y - 1
+// B - 1
+// G - 1
+
+str=prompt("enter a string :").replaceAll(" ","")
+emp=[],emp1=[]
+lower=str.split("").sort()
+u=""
+l=""
+for(i of lower){
+    if(i.toUpperCase()==i){
+        u+=i
+
+    }
+    else{
+        l+=i
+    }
+}
+b=u.split("")
+// console.log(u,b)
+s=l.split("")
+// console.log(s)
+console.log(s,b)
+for(i of s){
+    if(!emp.includes(i)){
+        emp.push(i)
+    }
+}
+// console.log(emp)
+for(i of emp){
+    c=0
+    for(j of s){
+        if(i==j)
+        c++
+    }
+    console.log(i,c)
+}
+for(i of b){
+    if(!emp1.includes(i)){
+        emp1.push(i)
+    }
+    
+}
+// console.log(emp1)
+for(i of emp1){
+    c=0
+    for(j of b){
+        if(i==j)
+        c++
+    }
+    console.log(i,c)
+}
+    </script>
+
+
+
+
+
+    
+</body>
+</html>

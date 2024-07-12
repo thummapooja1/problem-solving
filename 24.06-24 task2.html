@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to print the patten give rows
+        rows=+prompt("enter a no of rows:")
+        for(i=1;i<=rows;i++){
+            s=""
+            for(j=1;j<=i;j++){
+                s=s+"* "
+            }
+            console.log(s)
+        }
+        // anther way
+        rows1=+prompt("enter no of rows:")
+        for(i=0;i<=rows1;i++){
+            s=""
+            for(j=0;j<rows1;j++){
+                s=s+"* "
+            }
+            console.log(s)
+        }
+        // write a program to print the reverse of the patten 
+        row2=+prompt("enter a no of rows:")
+        for(i=row2;i<1;i++){
+            s=""
+            for(j=i;j=1;j++){
+                s=s+"* "
+            }
+            console.log(s)
+        }
+        // write a program to print the pattern by using user input
+        let n=5
+        let string=""
+        for(k=0;k<n;i++){
+            for(l=1;l<=k;l++){
+                string+=String.fromCharCode(j+65);
+            }
+            console.log(string)
+        }
+        // write a program to print the reverse of the String and remove vowel in string
+        str=prompt("enter a string").split("").reverse()
+        emp=""
+        vowel="aeiouAEIOU"
+        for(i of str){
+            if(!vowel.includes(i)){
+                emp+=i
+            }
+        }
+        console.log(emp)
+    //    
+    rows=prompt("enter a no of rows:")
+value=1
+for(i=1;i<=rows;i++){
+    s=""
+    for(k=1;k<=rows+i;k++){
+        s=s+" "
+    }
+    for(j=1;j<=rows-i+1;j++){
+        s=s+"* "
+    }
+    console.log(s)
+}
+
+rows=prompt("enter a no of rows:")
+value=1
+for(i=0;i<=rows;i++){
+    s=""
+    for(k=1;k<rows+i;k++){
+        s=s+" "
+    }
+    for(j=1;j<=rows-i+1;j++){
+        s=s+"* "
+    }
+    console.log(s)
+}
+// 
+row=prompt("enter a no of rows:")
+for(i=0;i<=row;i++){
+    s=""
+    for(j=1;j<=i;j++){
+        s+=s+"* "
+    }
+    console.log(s)
+}
+// 
+rows1=prompt("enter a no of rows:")
+for(i=0;i<=rows1;i++){
+    s=""
+    for(j=1;j<=rows1;j++){
+        if(i==1||j==5||i==rows1||j==rows1){
+            s=s+"* "
+        }
+        else{
+            s=s+" "
+        }
+    }
+    console.log(s)
+}
+// 
+rows2=prompt("enter a no of rows:")
+for(i=1;i<=rows2;i++){
+    s=""
+    for(j=1;j<=rows2;j++){
+        if(i==1||j==1||i==rows2||j==rows2){
+            s=s+j+" "
+        }
+        else{
+            s=s+" "
+        }
+    }
+    console.log(s)
+}
+// // write a program to print the number based on the number of rows.
+rows=+prompt("enter a rows:")
+num=1
+for(i=1;i<=rows;i++){
+    n=""
+    for(j=1;j<=i;j++){
+        n+=num+" "
+        num++
+    }
+    console.log(n)
+}
+// write a program to print the alphabets ..
+rows1=+prompt("enter a rows: ")
+for(i=1;i<=rows1;i++){
+    n="",lower=97
+    for(j=1;j<=i;j++){
+        n+=String.fromCharCode(lower)+" "
+        lower++
+    }
+    console.log(n)
+}
+// write a program to print the alphabets..
+rows2=+prompt("enter a rows: ")
+for(i=1;i<=rows2;i++){
+    n="",lower=97
+    for(j=1;j<=i;j++){
+        n+=String.fromCharCode(lower+i-1)+" "
+        // lower++
+    }
+    console.log(n)
+}
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

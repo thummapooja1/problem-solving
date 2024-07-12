@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to print rotate of array 
+        arr=[2,34,35,7]
+        temp=[]
+        for(i=2;i<arr.length;i++){
+             temp.push(arr[i])
+        }
+        for(j=0;j<arr.length-2;j++){
+            temp.push(arr[j])
+        }
+        console.log("before rotate the array",arr)
+        console.log("after rotating the array",temp)
+// //
+        // var arr1=[23,3,4,30]
+        // var right=[]
+        // function rotate(arr1,right){
+        //     var newarray=[]
+        //     for(var i=arr1.length-right;i=arr1.length;i++){
+        //         newarray.push(arr[i])
+        //     }
+        //     for(var i=0;i<arr1.length-right;i++){
+        //       newarray.push(arr[i])
+        //     }
+        //     return "The after roteting the array is:",newarray
+        //      console.log("the given array is:"+arr1+" "+" after roteting"+right)
+        //     }
+        //     console.log("the given array is:"+arr1+" "+" after roteting"+right)
+        //     rotate(arr1)
+            // ///
+            // write a program to print the how many paris there in arrays
+            arr=[10,20,20,10,34,90,90]
+            emp=[]
+            paris=0
+            for(i of arr){
+                if(!emp.includes(i))
+                    emp.push(i)
+    
+            }
+            for( i of emp){
+            c=0
+            for(j of arr){
+                if(i==j)
+                  c++
+            }
+            paris=paris+Math.floor(c/2)
+            }
+            console.log(emp)
+            console.log(" no.of pairs in give array is:",paris)
+        // write a program to print the missing number in given array
+        arr=[21,24,20,25]
+        arr.sort((a,b)=>a-b)
+        console.log(arr)
+        min=arr[0]
+        max=arr[arr.length-1]
+
+        for(k=min;k<=max;k++){
+            if(!arr.includes(k)){
+                console.log("missing the number is that:",k)
+                break
+        }
+         }
+            // write a program to print the  reverse of the array without using methods
+            arr=[2,4,1,5,9,6]
+            function backward(arr){
+            emp=[]
+            for(j=arr.length-1;j>=0;j--){
+             emp.push(arr[j])
+            }
+            return emp
+            }
+            console.log(backward(arr))
+           // write a program to print the length of array without method using
+            arr=[1,3,2,5,7,4]
+            function howmanynumbers(arr){
+                c=0
+                for(h of arr){
+                    c++
+                }
+            return "length of the array:"+" "+c
+            }
+            console.log(howmanynumbers(arr))
+            // another way to find the length of array
+            arr=[6,48,2,9,0]
+            function length(arr){
+                c=0
+                for(l=0;arr[l]!=undefined;l++){
+                     c++
+                }
+                return "length of array:"+" "+c
+            }
+            console.log(length(arr))
+            // write a program to sort the given array
+            arr=[2,4,10,28]
+            for(p=0;p<arr.length;p++){
+                for(m=p+1;m<arr.length;m++){
+                    if(arr[m]<arr[p]){
+                        t=arr[0]
+                        arr[p]=arr[m]
+                        arr[m]=t
+                    }
+                }
+            }
+            console.log(arr)
+
+    </script>
+</body>
+</html>

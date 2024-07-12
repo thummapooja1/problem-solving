@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //    write a program to print the convert uppercase to lowercase or convert lowercase to uppercase
+    str1=prompt("enter a number:")
+    lower=""
+    upper=""
+    for(i of str1){
+       if(i.toUpperCase()==i){
+          lower=lower+i.toLowerCase()
+        }
+        else{
+           upper+=i.toUpperCase()
+        }
+   }
+   if(lower=="")
+   console.log(upper)
+   else
+   console.log(lower)
+    // Write a js program to print lower case first followed by upper case letters.
+    // input : Enter a string: I am Good
+    // amoodIG.
+
+    str=prompt("enter a string:")
+    newstr=str.replaceAll(" ","")
+    u=""
+    l=""
+    // console.log(newstr)
+    for( i of newstr){
+       if(i.toUpperCase(0)==i){
+           u+=i.toUpperCase()
+        
+        }
+        else{
+            l+=i.toLowerCase()
+        }
+    }
+    console.log("First lowercase  latter then after uppercase:"+" "+l+u)
+    // /write a program to print the covert the camel case value in to upper to lower case
+    str1=prompt("enter a number:")
+
+    newstr=""
+    for(i of str1){
+       if(i.toUpperCase()==i){
+           newstr+=i.toLowerCase()
+        }
+        else{
+           newstr+=i.toUpperCase()
+        }
+    }
+    console.log(newstr)
+    // ////str=prompt("enter a string:")
+l=""
+u=""
+for(i of str){
+    if(i===" ")
+       continue;
+    if(i===i.toLowerCase())
+       l+=i
+    if(i===i.toUpperCase())
+       u+=i
+}
+console.log(l+u)
+low=l
+upp=u
+newone=""
+for(j of i){
+    if(upp[j]!==undefined){
+        newone+=low[j]+upp[j]
+        
+    }
+    else{
+        newone+=low[j]
+    }
+}
+console.log(newone)
+
+    </script>
+    
+</body>
+</html>

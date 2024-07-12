@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program to print the unique number in given array
+        arr=[2,3,4,5,6,3,3,2]
+        for(i=0;i<arr.length;i++){
+            c=0
+            for(j=0;j<arr.length;j++){
+                if(arr[i]==arr[j])
+                c++
+            }
+            if(c==1)
+            console.log(arr[i]);
+
+        }
+        // write a program to print the reverse of factorial
+        num=+prompt("enter a number:")
+        p=1
+        res=""
+        for(i=num;i>=1;i--){
+            p=p*i
+           if(i==num)
+             res+=i
+
+            else
+            res+=i
+        }
+        console.log(res.split("").join("*")+"="+p);
+        //  write a program to print  mid value in the given range
+        arr=[2,3,4,5,6,7,8,9]
+        if(arr.length%2==0){
+            mid=Math.floor(arr.length/2)
+            console.log("mid"+" "+arr[mid-1]+" "+arr[mid]);
+        }
+        else{
+            mid=Math.floor(arr.length/2)
+            console.log("mid"+" "+arr[mid]);
+        }
+        // // write a program to print the 
+        arr=prompt("entre  number:").split("").map(Number)
+        for(i of arr){
+            x=String(i)
+            e=""
+            for(j of x){
+                if(!e.includes(j))
+                e+=j
+            }
+            if(x==e)
+            console.log(x);
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
