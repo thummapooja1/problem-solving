@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Write a program to print true if the number is unique else print false if it contains duplicates
+
+// input: 1211
+// output: False
+
+// input: 453
+// output: True
+
+number = prompt("Enter a number:");
+seenDigits = "";
+isUnique = true; 
+for ( i = 0; i < number.length; i++) {
+    digit = number[i];
+    if (seenDigits.indexOf(digit) !== -1) {
+        isUnique = false;
+        break;
+    }
+    seenDigits += digit;
+}
+console.log(isUnique);
+
+// Write a program to print the below expression for the given number (Factorial)
+
+// input: 5
+
+// 5*4*3*2*1=120
+
+num=+prompt("enter a number:")
+p=1,res=" "
+for(i=1;i<=num;i++){
+p=p*i
+ res=res+i+"*"
+    
+}
+console.log(res+"="+p)
+ </script>
+    
+</body>
+</html>
