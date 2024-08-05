@@ -1,112 +1,40 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
     <script>
-        // write a program to print the given array is ascending order or descending order
-        arr=[23,6,5,16]
-        diff=arr[0]-arr[1]
-        if(diff>0){
-            c=0
-            for(i=0;i<arr.length-1;i++){
-                if(arr[i+1]<arr[i])
-                c++
-            }
-            if(c==arr.length-1){
-                console.log("Descending order")
-            }
-            else{
-                console.log("unorder")
-            }
-        }
-        else{
-            c=0
-            for(i=0;i<arr.length-1;i++){
-                if(arr[i+1]>arr[i]){
-                c++
 
-                console.log("Ascending order");
-               }
-               else{
-                console.log("unorder");
-               }
-            }
-        console.log();
-        }
-        // ///
-        arr=[23,6,5,16]
-        diff=arr[0]-arr[1]
-        if(arr[i+1]<=arr[i]){
-            c=0
-            for(i=0;i<arr.length-1;i++){
-                if(arr[i+1]<arr[i])
-                c++
-            }
-            if(c==arr.length-1){
-                console.log("Descending order")
-            }
-            else{
-                console.log("unorder")
-            }
-        }
-        else{
-            c=0
-            for(i=0;i<arr.length-1;i++){
-                if(arr[i+1]>=arr[i]){
-                c++
 
-                console.log("Ascending order");
-               }
-               else{
-                console.log("unorder");
-               }
-            }
-        console.log();
-        }
-        //write a program to print the Transformation Matrix using the given user inputs
-        rows = +prompt("Enter no of rows: ")
-        cols = +prompt("Enter no of columns: ")
-        matrix=[]
-        for(i=1;i<=rows;i++){
-            sub=[]
-            for(j=1;j<=cols;j++){
-                 console.log("Enter "+i+""+j+" element: ")
-                 ele=+prompt()
-                 sub.push(ele)
-            }
-             matrix.push(sub)
-        }
-        console.log("before transposing matrix is:")
-        for(i in matrix){
-    
-            s=""
-            for(j in  matrix[i]){
-                s=s+matrix[i][j]+" "
-            }
-                console.log(s)
-    
-        }
+// Define the 3x3 matrix
+const matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
 
-        console.log("--------------")
-        console.log("after transposing matrix is:")
-
-    for(i in matrix){
-    
-        s=""
-        for(j in  matrix[i]){
-            s=s+matrix[j][i]+" "
-        }
-            console.log(s)
+// Print the original matrix
+console.log('Original 3x3 Matrix:');
+for (let i = 0; i < matrix.length; i++) {
+    let row = '';
+    for (let j = 0; j < matrix[i].length; j++) {
+        row += matrix[i][j] + ' ';
     }
-    // /// write a program to print the square of the given arrays
-    arr=[4,8,2,3,0,1]
-    arr.sort((a,b)=>a-b)
-    console.log(arr)
-    f=arr.map((val,ind,arr)=>{
-       return val*val
-    })
-    console.log(f)
+    console.log(row.trim());
+}
+
+// Create and print the transposed matrix
+console.log('Transposed Matrix:');
+for (let i = 0; i < matrix[0].length; i++) {
+    let row = '';
+    for (let j = 0; j < matrix.length; j++) {
+        row += matrix[j][i] + ' ';
+    }
+    console.log(row.trim());
+}
 
     </script>
     
